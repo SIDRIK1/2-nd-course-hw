@@ -1,0 +1,81 @@
+@media (max-width: 1000px){
+
+      .center {
+        padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px);
+    }
+
+  
+
+    .mini-game {
+        
+
+        &__zag{
+            font-size: 52px;
+            padding-top: 49px;
+        }
+
+       
+
+
+        &__text-box {
+            padding-bottom: 32px;
+
+        }
+
+        &__img {
+            
+        }
+
+        &__name {
+            font-size: 42px;
+        }
+
+        &__opis {
+            font-size: 24px;
+        }
+
+        &__img {
+            width: 400px;
+        }
+
+        
+
+       
+    }
+
+    .header {
+        max-width: 100%;
+        height: 700px;
+
+        &__zag{
+            font-size: 52px;
+        }
+
+        &__text{
+            font-size: 24px;
+        }
+
+        &__bold {
+            font-size: 24px;
+        }
+
+        &__main{
+            padding-top: 147px;
+        }
+
+        &__but{
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: 24px;
+        }
+    }
+    
+    .footer{
+        font-size: 24px;
+    }
+
+   
+
+
+}
