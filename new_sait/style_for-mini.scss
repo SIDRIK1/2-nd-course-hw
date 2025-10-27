@@ -323,6 +323,12 @@
     right: 29px;
 }
 
+button:hover {
+    border: none;
+}
+
+@import '__planshet';
+
 @media (max-width: 800px) {
     .center {
         padding-left: calc(50% - 172px);
@@ -344,15 +350,19 @@
         &__item {
             flex-direction: column;
             padding-bottom: 32px;
+            
         }
 
 
         &__text-box {
             order: 1;
+            padding-top: 29px;
+            padding-bottom: 0;
         }
 
         &__img {
             order: 0;
+            width: 100%;
         }
 
         &__name {
@@ -419,4 +429,3 @@
 
 }
 
-@import '__planshet';

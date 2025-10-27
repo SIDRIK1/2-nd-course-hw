@@ -31,7 +31,7 @@ alert(result)
 // task 6 
 // Вместо а буду использовать переменную с 
 
-let с = 9 
+let c = 9 
 let b = 2
 
 alert(c%b)
