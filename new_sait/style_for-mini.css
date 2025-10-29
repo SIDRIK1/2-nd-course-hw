@@ -11,8 +11,8 @@
 
 .header {
   background-image: url(./img/kryt.png);
-  height: 800px;
-  max-width: 100%;
+  height: 100vh;
+  max-width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -307,10 +307,6 @@ button:hover {
     content: none;
     display: none;
   }
-  .header {
-    max-width: 100%;
-    height: 700px;
-  }
   .header__zag {
     font-size: 52px;
   }
@@ -392,20 +388,22 @@ button:hover {
     display: none;
   }
   .header {
-    max-width: 100%;
     height: 700px;
   }
   .header__zag {
     font-size: 40px;
+    text-align: center;
   }
   .header__text {
     font-size: 16px;
+    text-align: center;
   }
   .header__bold {
     font-size: 16px;
   }
   .header__main {
     padding-top: 147px;
+    align-items: center;
   }
   .header__but {
     padding: 16px 80px;
