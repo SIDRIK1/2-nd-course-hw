@@ -340,9 +340,9 @@ button:hover {
     }
 
     .mini-game {
-        
 
-        &__zag{
+
+        &__zag {
             font-size: 40px;
             padding-top: 49px;
         }
@@ -350,7 +350,7 @@ button:hover {
         &__item {
             flex-direction: column;
             padding-bottom: 32px;
-            
+
         }
 
 
@@ -373,49 +373,98 @@ button:hover {
             font-size: 16px;
         }
 
-        
 
-        &__wrapper::after{
+
+        &__wrapper::after {
             content: none;
             display: none;
         }
 
-        &__wrapper::before{
+        &__wrapper::before {
             content: none;
             display: none;
         }
     }
 
     .header {
-        
+        background-image: url(./img/header_fon_mob.svg);
         height: 700px;
+        position: relative;
 
-        &__zag{
+        &__zag {
             font-size: 40px;
             text-align: center;
         }
 
-        &__text{
+        &__text {
             font-size: 16px;
             text-align: center;
+            position: relative;
         }
 
         &__bold {
             font-size: 16px;
         }
 
-        &__main{
+        &__main {
             padding-top: 147px;
             align-items: center;
+            position: relative;
         }
 
-        &__but{
+        &__but {
             padding: 16px 80px;
             font-size: 16px;
+            position: relative;
         }
+
+        // &__main::after {
+        //     content: url(./img/Star\ 2.svg);
+        //     top: 85px;
+        //     left: 35px;
+        //     position: absolute;
+        // }
+
+        &__main::before {
+            content: url(./img/Star\ 5.svg);
+            position: relative;
+            top: 430px;
+            right: -80px;
+        }
+
+        &__but::before {
+            content: url(./img/Star\ 4.svg);
+            position: absolute;
+            top: 90px;
+            right: -15px;
+        }
+
+        &__but::after{
+            position: absolute;
+            content: url(./img/Star\ 3.svg);
+            top: -420px;
+            left: 10px;
+        }
+
+        &__text::before{
+            content: url(./img/Star\ 2.svg);
+            top: -265px;
+            left: 10px;
+            position: absolute;
+        }
+
     }
+
+    .header::after {
+        content: url(./img/big_star.svg);
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
     
-    .footer{
+
+    .footer {
         font-size: 16px;
     }
 
@@ -425,10 +474,9 @@ button:hover {
 
     }
 
-    .element::before{
+    .element::before {
         content: none;
         display: none;
     }
 
 }
-

@@ -388,7 +388,9 @@ button:hover {
     display: none;
   }
   .header {
+    background-image: url(./img/header_fon_mob.svg);
     height: 700px;
+    position: relative;
   }
   .header__zag {
     font-size: 40px;
@@ -397,6 +399,7 @@ button:hover {
   .header__text {
     font-size: 16px;
     text-align: center;
+    position: relative;
   }
   .header__bold {
     font-size: 16px;
@@ -404,10 +407,42 @@ button:hover {
   .header__main {
     padding-top: 147px;
     align-items: center;
+    position: relative;
   }
   .header__but {
     padding: 16px 80px;
     font-size: 16px;
+    position: relative;
+  }
+  .header__main::before {
+    content: url(./img/Star\ 5.svg);
+    position: relative;
+    top: 430px;
+    right: -80px;
+  }
+  .header__but::before {
+    content: url(./img/Star\ 4.svg);
+    position: absolute;
+    top: 90px;
+    right: -15px;
+  }
+  .header__but::after {
+    position: absolute;
+    content: url(./img/Star\ 3.svg);
+    top: -420px;
+    left: 10px;
+  }
+  .header__text::before {
+    content: url(./img/Star\ 2.svg);
+    top: -265px;
+    left: 10px;
+    position: absolute;
+  }
+  .header::after {
+    content: url(./img/big_star.svg);
+    top: 0;
+    right: 0;
+    position: absolute;
   }
   .footer {
     font-size: 16px;
