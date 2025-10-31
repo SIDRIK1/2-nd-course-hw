@@ -9,6 +9,10 @@
     padding-right: calc(50% - 600px);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header {
     background-image: url(./img/kryt.png);
     height: 100vh;
