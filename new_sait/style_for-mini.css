@@ -360,9 +360,13 @@ button:hover {
   .about {
     display: none;
   }
+  .mini-game {
+    padding-bottom: 49px;
+  }
   .mini-game__zag {
     font-size: 40px;
     padding-top: 49px;
+    margin-bottom: 48px;
   }
   .mini-game__item {
     flex-direction: column;
@@ -379,9 +383,20 @@ button:hover {
   }
   .mini-game__name {
     font-size: 32px;
+    margin-bottom: 16px;
   }
   .mini-game__opis {
     font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .mini-game__btn {
+    width: 285px;
+    font-size: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .mini-game__wrapper::after {
     content: none;
@@ -404,19 +419,26 @@ button:hover {
     font-size: 16px;
     text-align: center;
     position: relative;
+    line-height: 100%;
   }
   .header__bold {
     font-size: 16px;
   }
   .header__main {
-    padding-top: 147px;
+    padding-top: 118px;
     align-items: center;
     position: relative;
   }
   .header__but {
-    padding: 16px 80px;
     font-size: 16px;
     position: relative;
+    width: 285px;
+  }
+  .header__footer {
+    background-color: #BDED35;
+    width: 100%;
+    height: 52px;
+    margin-top: 154px;
   }
   .header__main::before {
     content: url(./img/Star\ 5.svg);
@@ -450,6 +472,7 @@ button:hover {
   }
   .footer {
     font-size: 16px;
+    height: 100px;
   }
   .element::after {
     content: none;
