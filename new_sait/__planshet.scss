@@ -21,16 +21,18 @@
         &__text-box {
             padding-bottom: 32px;
             padding-left: 32px;
+            width: 400px;
         }
 
         &__img {}
 
         &__name {
-            font-size: 30px;
+            font-size: 24px;
         }
 
         &__opis {
-            font-size: 24px;
+            font-size: 16px;
+            width: 275px;
         }
 
         &__img {
@@ -106,6 +108,14 @@
         &__opis::before {
             content: none;
             display: none;
+        }
+
+        &__game-name{
+            font-size: 22px;
+        }
+
+        &__text-box{
+            padding-left: 20px;
         }
     }
 
