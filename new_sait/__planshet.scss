@@ -33,6 +33,7 @@
         &__opis {
             font-size: 16px;
             width: 275px;
+            line-height: 24px;
         }
 
         &__img {
@@ -53,7 +54,7 @@
     }
 
     .header {
-        
+        height: 30vh;
         
 
         &__zag {
@@ -95,6 +96,8 @@
     }
 
     .about {
+
+
         &__game::before {
             content: none;
             display: none;

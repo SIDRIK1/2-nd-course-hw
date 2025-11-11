@@ -20,7 +20,6 @@ button {
 .header {
   background-image: url(./img/kryt.png);
   min-height: 100vh;
-  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -34,7 +33,7 @@ button {
 .header__but {
   width: 247px;
   padding: 16px 28px;
-  background-color: black;
+  background-color: #202027;
   color: white;
   border-radius: 60px;
   font-weight: 600;
@@ -48,6 +47,7 @@ button {
   font-size: 64px;
   line-height: 100%;
   letter-spacing: 0px;
+  color: #202027;
 }
 .header__text {
   font-weight: 400;
@@ -56,12 +56,14 @@ button {
   letter-spacing: 0px;
   vertical-align: middle;
   max-width: 720px;
+  color: #202027;
 }
 .header__bold {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
+  color: #202027;
 }
 .header__but:hover {
   background-color: white;
@@ -109,6 +111,7 @@ button {
   border-radius: 53px;
   display: inline-block;
   margin-bottom: 16px;
+  color: #202027;
 }
 .about__game-name {
   font-weight: 700;
@@ -213,7 +216,7 @@ button {
 .mini-game__btn {
   width: 247px;
   padding: 16px 28px;
-  background-color: black;
+  background-color: #202027;
   color: white;
   border-radius: 60px;
   font-weight: 600;
@@ -229,6 +232,7 @@ button {
   line-height: 100%;
   letter-spacing: 0px;
   margin-bottom: 24px;
+  color: #202027;
 }
 .mini-game__opis {
   font-weight: 400;
@@ -237,6 +241,7 @@ button {
   letter-spacing: 0px;
   margin-bottom: 36px;
   width: 457px;
+  color: #202027;
 }
 .mini-game__btn:hover {
   background-color: white;
@@ -307,6 +312,7 @@ button:hover {
   .mini-game__opis {
     font-size: 16px;
     width: 275px;
+    line-height: 24px;
   }
   .mini-game__img {
     width: 400px;
@@ -318,6 +324,9 @@ button:hover {
   .mini-game__wrapper::before {
     content: none;
     display: none;
+  }
+  .header {
+    height: 30vh;
   }
   .header__zag {
     font-size: 52px;
@@ -398,6 +407,7 @@ button:hover {
   .mini-game__name {
     font-size: 32px;
     margin-bottom: 16px;
+    width: 200px;
   }
   .mini-game__opis {
     font-size: 16px;
@@ -454,7 +464,7 @@ button:hover {
     background-color: #BDED35;
     width: 100%;
     height: 52px;
-    margin-top: 154px;
+    margin-top: 158px;
   }
   .header__main::before {
     content: url(./img/Star\ 5.svg);

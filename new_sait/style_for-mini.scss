@@ -3,6 +3,8 @@
     padding: 0;
     font-family: 'Montserrat';
 }
+$color : #202027 ;
+
 
 .center {
     padding-left: calc(50% - 600px);
@@ -20,7 +22,6 @@ button{
 .header {
     background-image: url(./img/kryt.png);
     min-height: 100vh;
-    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -37,7 +38,7 @@ button{
     &__but {
         width: 247px;
         padding: 16px 28px;
-        background-color: black;
+        background-color: $color;
         color: white;
         border-radius: 60px;
         font-weight: 600;
@@ -53,7 +54,7 @@ button{
         font-size: 64px;
         line-height: 100%;
         letter-spacing: 0px;
-
+        color: $color;
     }
 
     &__text {
@@ -63,6 +64,7 @@ button{
         letter-spacing: 0px;
         vertical-align: middle;
         max-width: 720px;
+        color: $color;
     }
 
     &__bold {
@@ -71,7 +73,7 @@ button{
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0px;
-
+        color: $color;
     }
 
     &__but:hover {
@@ -87,6 +89,10 @@ button{
     background-color: #202027;
     padding-bottom: 96px;
     padding-top: 94px;
+
+    
+
+
 
     &__wrapper {
         display: flex;
@@ -127,6 +133,7 @@ button{
         border-radius: 53px;
         display: inline-block;
         margin-bottom: 16px;
+        color: $color;
     }
 
     &__game-name {
@@ -254,7 +261,7 @@ button{
     &__btn {
         width: 247px;
         padding: 16px 28px;
-        background-color: black;
+        background-color: $color;
         color: white;
         border-radius: 60px;
         font-weight: 600;
@@ -271,6 +278,7 @@ button{
         line-height: 100%;
         letter-spacing: 0px;
         margin-bottom: 24px;
+        color: $color;
     }
 
     &__opis {
@@ -280,6 +288,7 @@ button{
         letter-spacing: 0px;
         margin-bottom: 36px;
         width: 457px;
+        color: $color;
     }
 
     &__btn:hover {
@@ -379,6 +388,7 @@ button:hover {
         &__name {
             font-size: 32px;
             margin-bottom: 16px;
+            width: 200px;
         }
 
         &__opis {
@@ -449,7 +459,7 @@ button:hover {
             background-color: #BDED35;
             width: 100%;
             height: 52px;
-            margin-top: 154px;
+            margin-top: 158px;
         }
 
 

@@ -39,12 +39,11 @@ function randomNumberGame() {
 // task 1
 
 function minValue(a, b) {
-    Number(a)
-    Number(b)
+    
 
-    if (a > b) {
+    if (a < b) {
         return a
-    } else if (a < b) {
+    } else if (a > b) {
         return b
     } else {
         return a
@@ -83,8 +82,7 @@ function age() {
 // task 5
 
 function isNan(a, b) {
-    Number(a)
-    Number(b)
+   
 
     function isNumber(value) {
         return typeof value === 'number' && !isNaN(value);
@@ -93,45 +91,45 @@ function isNan(a, b) {
     if (isNumber(a) && isNumber(b)) {
         return a * b
     } else {
-        alert('Одно или оба значения не являются числом')
+        return 'Одно или оба значения не являются числом'
     }
 }
 
 // task 6
 
 function kub() {
-    let a = prompt('Введите число: ')
-    Number(a)
+    let a = Number(prompt('Введите число: '))
+    
 
     function isNumber(value) {
         return typeof value === 'number' && !isNaN(value);
     }
 
     if (isNumber(a)) {
-        alert(`${a} в кубе равняется ${a ** 3}`)
+        return `${a} в кубе равняется ${a ** 3}`
     } else {
-        alert('Переданный параметр не является числом')
+        return 'Переданный параметр не является числом'
     }
 }
 
 // task 7 
 
-function getArea(r) {
-    return 3.14 * (r ** 2)
+function getArea() {
+    return 3.14 * (this.radius ** 2)
 }
 
-function getPerimetr(r) {
-    return 2 * 3.14 * r
+function getPerimetr() {
+    return 2 * 3.14 * this.radius
 }
 
 let circle1 = {
     radius: 15,
-    getArea: getArea(),
-    getPerimetr: getPerimetr()
+    getArea: getArea,
+    getPerimetr: getPerimetr
 }
 
 let circle2 = {
     radius: 20,
-    getArea: getArea(),
-    getPerimetr: getPerimetr()
+    getArea: getArea,
+    getPerimetr: getPerimetr
 }
