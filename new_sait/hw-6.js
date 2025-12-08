@@ -1,16 +1,16 @@
 
 function mathQuiz() {
-    
-    const num1 = Math.floor(Math.random() * 20) + 1;
-    const num2 = Math.floor(Math.random() * 20) + 1;
-    
+
+    let num1 = Math.floor(Math.random() * 20) + 1;
+    let num2 = Math.floor(Math.random() * 20) + 1;
+
     
     const operation = Math.floor(Math.random() * 4);
     let correctAnswer;
     let operationSign;
-    
+
     switch (operation) {
-        case 0: 
+        case 0:
             correctAnswer = num1 + num2;
             operationSign = '+';
             break;
@@ -18,33 +18,31 @@ function mathQuiz() {
             correctAnswer = num1 - num2;
             operationSign = '-';
             break;
-        case 2: 
+        case 2:
             correctAnswer = num1 * num2;
             operationSign = '*';
             break;
-        case 3: 
-            const divisor = Math.floor(Math.random() * 10) + 1;
-            const dividend = divisor * (Math.floor(Math.random() * 10) + 1);
-            correctAnswer = dividend / divisor;
-            operationSign = '/';
-            num1 = dividend;
-            num2 = divisor;
+        case 3:
+            num2 = Math.floor(Math.random() * 10) + 1;
+            num1 = num2 * (Math.floor(Math.random() * 10) + 1);
+            correctAnswer = num1 / num2;
+            operationSign = '÷';
             break;
     }
-    
-    
+
+
     const userAnswer = prompt(`${num1} ${operationSign} ${num2} = ?`);
-    
-    
+
+
     if (parseFloat(userAnswer) === correctAnswer) {
         alert('✅ Правильно! Молодец!');
     } else {
         alert(`❌ Неправильно! Правильный ответ: ${num1} ${operationSign} ${num2} = ${correctAnswer}`);
     }
-    
-    
+
+
     if (confirm('Хочешь еще задачу?')) {
-        mathQuiz(); 
+        mathQuiz();
     }
 }
 
@@ -58,7 +56,7 @@ for (i = 0; i < mas.length; i++) {
     if (i == 10) {
         break
     }
-    console.log(i)
+    console.log(mas[i])
 }
 
 // task 2
@@ -180,7 +178,7 @@ for (let i = 0; i < 10; i++) {
 let chetMas = []
 
 for (i = 0; i < ranMas.length; i++) {
-    if(ranMas[i] % 2){
+    if (ranMas[i] % 2) {
         chetMas.push(ranMas[i])
     }
 }
@@ -196,7 +194,7 @@ for (let i = 0; i < 6; i++) {
     randMas2.push(Math.floor(Math.random() * 10) + 1)
 }
 
-for (i = 0 ; i < randMas2.length; i++){
+for (i = 0; i < randMas2.length; i++) {
     sum1 += randMas2[i]
 }
 
