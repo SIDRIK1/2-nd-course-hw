@@ -4,7 +4,7 @@ function mathQuiz() {
     let num1 = Math.floor(Math.random() * 20) + 1;
     let num2 = Math.floor(Math.random() * 20) + 1;
 
-    
+
     const operation = Math.floor(Math.random() * 4);
     let correctAnswer;
     let operationSign;
@@ -53,7 +53,7 @@ function mathQuiz() {
 let mas = [1, 5, 4, 10, 0, 3]
 
 for (i = 0; i < mas.length; i++) {
-    if (i == 10) {
+    if (mas[i] == 10) {
         break
     }
     console.log(mas[i])
