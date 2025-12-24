@@ -66,6 +66,17 @@ btnAlltrade.addEventListener('click', function () {
 
 // task 5 одинаковое задание с 4 ??????
 
+let btnAlltrade2 = document.querySelector('.btntrade3')
+
+btnAlltrade2.addEventListener('click', function () {
+
+    let textAllTrade1 = document.querySelectorAll('.description')
+
+    for (let element of textAllTrade1) {
+        element.textContent = '«Новый текст»'
+    }
+})
+
 
 // task 6
 
