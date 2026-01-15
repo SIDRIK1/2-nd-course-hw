@@ -19,10 +19,10 @@ button {
 
 .header {
   background-image: url(./img/kryt.png);
-  min-height: 100vh;
+  height: 800px;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
+  background-color: #202027;
 }
 .header__main {
   padding-top: 196px;
@@ -70,7 +70,40 @@ button {
   color: black;
   transition: all 1.5s;
 }
+.header__footer {
+  padding-top: 243px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  width: 1440px;
+  position: relative;
+  left: -1690px;
+  display: flex;
+  gap: 51px;
+}
+.header__wrapper-content {
+  display: flex;
+  gap: 51px;
+  white-space: nowrap;
+  color: #202027;
+  animation: smoothBackForth 20s ease-in-out infinite alternate;
+}
+.header__star-img {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+}
 
+@keyframes smoothBackForth {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1615px);
+  }
+}
 .about {
   background-color: #202027;
   padding-bottom: 96px;
@@ -132,6 +165,7 @@ button {
   align-items: start;
   gap: 32px;
   position: relative;
+  justify-items: center;
 }
 .about__text-box {
   padding-left: 32px;
@@ -325,9 +359,6 @@ button:hover {
     content: none;
     display: none;
   }
-  .header {
-    height: 30vh;
-  }
   .header__zag {
     font-size: 52px;
   }
@@ -344,6 +375,9 @@ button:hover {
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 24px;
+  }
+  .header__footer {
+    padding-top: 310px;
   }
   .footer {
     font-size: 24px;
@@ -490,10 +524,13 @@ button:hover {
     left: 10px;
     position: absolute;
   }
-  .header::after {
+  .header__footer {
+    display: none;
+  }
+  .header__main::after {
     content: url(./img/big_star.svg);
     top: 0;
-    right: 0;
+    right: -15px;
     position: absolute;
   }
   .footer {

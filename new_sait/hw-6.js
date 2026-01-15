@@ -100,16 +100,16 @@ let mas52 = mas51.sort()
 
 // task 7
 
-let mas6 = [9, 8, 7, 6, 5]
+// let mas6 = [9, 8, 7, 6, 5]
 
-let userNumbner = prompt('Угадайте число из массива! Введите число: ')
+// let userNumbner = prompt('Угадайте число из массива! Введите число: ')
 
-if (mas6.includes(Number(userNumbner))) {
-    alert('Угадал')
+// if (mas6.includes(Number(userNumbner))) {
+//     alert('Угадал')
 
-} else {
-    alert('Не угадал!')
-}
+// } else {
+//     alert('Не угадал!')
+// }
 
 // task 8 
 

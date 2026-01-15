@@ -14,19 +14,53 @@
 </head>
 
 <body>
-    <header class="header ">
+    <header class="header center ">
         <div class="header__main center">
             <h1 class="header__zag">
                 Добро пожаловать <br> на мой сайт мини-игр
             </h1>
             <p class="header__text">
-                Тебе предстоит пройти несколько увлекательных игр.  Если готов, нажимай <span
+                Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
                     class="header__bold">«Поехали!»</span> и <span class="header__bold">приступай</span>.
             </p>
             <button class="header__but" onclick="location.href='#about'">Поехали!</button>
         </div>
         <div class="header__footer">
-
+            <div class="header__wrapper-content">
+                Викторина <svg class="header__star-img" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                viewBox="0 0 36 36" fill="none">
+                <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
+                    fill="#202027" />
+                </svg>
+                Угадай число <svg class="header__star-img" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                viewBox="0 0 36 36" fill="none">
+                <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
+                    fill="#202027" />
+                </svg>
+                Переверни текст <svg class="header__star-img" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                viewBox="0 0 36 36" fill="none">
+                <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
+                    fill="#202027" />
+                </svg>
+                Простая арифметика <svg class="header__star-img" xmlns="http://www.w3.org/2000/svg" width="36"
+                height="36"
+                viewBox="0 0 36 36" fill="none">
+                <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
+                    fill="#202027" />
+                </svg>
+                Камень ножницы бумага <svg class="header__star-img" xmlns="http://www.w3.org/2000/svg" width="36"
+                height="36"
+                viewBox="0 0 36 36" fill="none">
+                <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
+                    fill="#202027" />
+                </svg>
+                Генератор случайных цветов <svg class="header__star-img" xmlns="http://www.w3.org/2000/svg" width="36"
+                height="36"
+                viewBox="0 0 36 36" fill="none">
+                <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
+                    fill="#202027" />
+                </svg>
+            </div>
         </div>
     </header>
 
@@ -114,14 +148,14 @@
                     <img src="./img/game2.png" alt="" class="mini-game__img">
                     <div class="mini-game__text-box">
                         <p class="mini-game__name">Простая арифметика</p>
-                        <p class="mini-game__opis">Попробуй решить простые  арифметические задачи.</p>
+                        <p class="mini-game__opis">Попробуй решить простые арифметические задачи.</p>
                         <button class="mini-game__btn" onclick="mathQuiz()">Играть!</button>
                     </div>
                 </div>
                 <div class="mini-game__item" id="game3">
                     <div class="mini-game__text-box">
                         <p class="mini-game__name">Переверни текст</p>
-                        <p class="mini-game__opis">Попробуй ввести текст, который  будет перевернут.</p>
+                        <p class="mini-game__opis">Попробуй ввести текст, который будет перевернут.</p>
                         <button class="mini-game__btn" onclick="reverseText()">Играть!</button>
                     </div>
                     <img src="./img/game3.png" alt="" class="mini-game__img">
@@ -131,14 +165,14 @@
                     <div class="mini-game__text-box">
                         <p class="mini-game__name">Камень, ножницы, бумага</p>
                         <p class="mini-game__opis">Сыграй в популярную игру против компьютера.</p>
-                        <button class="mini-game__btn" onclick="playRockPaperScissors()" >Играть!</button>
+                        <button class="mini-game__btn" onclick="playRockPaperScissors()">Играть!</button>
                     </div>
                 </div>
                 <div class="mini-game__item" id="game5">
                     <div class="mini-game__text-box">
                         <p class="mini-game__name">Простая викторина</p>
-                        <p class="mini-game__opis">Отвечай на вопросы викторины  с вариантами ответов.</p>
-                        <button class="mini-game__btn" onclick="game4Quiz()" >Играть!</button>
+                        <p class="mini-game__opis">Отвечай на вопросы викторины с вариантами ответов.</p>
+                        <button class="mini-game__btn" onclick="game4Quiz()">Играть!</button>
                     </div>
                     <img src="./img/game5.png" alt="" class="mini-game__img">
                 </div>
@@ -146,9 +180,9 @@
                     <img src="./img/game6.png" alt="" class="mini-game__img">
                     <div class="mini-game__text-box">
                         <p class="mini-game__name">Генератор случайных цветов</p>
-                        <p class="mini-game__opis">Игра, в которой при клике на кнопку  фон страницы меняется на
+                        <p class="mini-game__opis">Игра, в которой при клике на кнопку фон страницы меняется на
                             случайный.</p>
-                        <button class="mini-game__btn">Играть!</button>
+                        <button class="mini-game__btn" onclick="startColorGame()">Играть!</button>
                     </div>
                 </div>
             </div>
@@ -163,6 +197,7 @@
     <script src="hw-6.js"></script>
     <script src="hw-7.js"></script>
     <script src="hw-8.js"></script>
+    <script src="end.js"></script>
 </body>
 
 </html>
