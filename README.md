@@ -27,7 +27,7 @@
 ---
 
 ## 🚀 **Live Demo**
-**[Играть онлайн →](https://ваш-username.github.io/mini-games)**
+**[Играть онлайн →]([https://ваш-username.github.io/mini-games](https://sidrik1.github.io/2-nd-course-hw/new_sait/index.html))**
 
 ---
 
