@@ -27,7 +27,7 @@
 ---
 
 ## 🚀 **Live Demo**
-**[Играть онлайн →]((https://sidrik1.github.io/2-nd-course-hw/new_sait/index.html))**
+**[Играть онлайн →](https://sidrik1.github.io/2-nd-course-hw/new_sait/index.html)**
 
 ---
 
