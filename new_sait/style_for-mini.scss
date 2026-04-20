@@ -3,23 +3,28 @@
     padding: 0;
     font-family: 'Montserrat';
 }
+$color : #202027 ;
+
 
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
 
-html{
+html {
     scroll-behavior: smooth;
+}
+
+button{
+    border: none;
 }
 
 .header {
     background-image: url(./img/kryt.png);
-    height: 100vh;
-    max-width: 100vw;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 
 
     &__main {
@@ -33,7 +38,7 @@ html{
     &__but {
         width: 247px;
         padding: 16px 28px;
-        background-color: black;
+        background-color: $color;
         color: white;
         border-radius: 60px;
         font-weight: 600;
@@ -49,6 +54,7 @@ html{
         font-size: 64px;
         line-height: 100%;
         letter-spacing: 0px;
+        color: $color;
     }
 
     &__text {
@@ -57,7 +63,8 @@ html{
         line-height: 32px;
         letter-spacing: 0px;
         vertical-align: middle;
-
+        max-width: 720px;
+        color: $color;
     }
 
     &__bold {
@@ -66,7 +73,7 @@ html{
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0px;
-
+        color: $color;
     }
 
     &__but:hover {
@@ -82,6 +89,10 @@ html{
     background-color: #202027;
     padding-bottom: 96px;
     padding-top: 94px;
+
+    
+
+
 
     &__wrapper {
         display: flex;
@@ -122,6 +133,7 @@ html{
         border-radius: 53px;
         display: inline-block;
         margin-bottom: 16px;
+        color: $color;
     }
 
     &__game-name {
@@ -137,7 +149,7 @@ html{
         background-color: #FFFFFF;
         border-radius: 30px;
         z-index: 1;
-
+        
     }
 
     &__game {
@@ -249,7 +261,7 @@ html{
     &__btn {
         width: 247px;
         padding: 16px 28px;
-        background-color: black;
+        background-color: $color;
         color: white;
         border-radius: 60px;
         font-weight: 600;
@@ -266,6 +278,7 @@ html{
         line-height: 100%;
         letter-spacing: 0px;
         margin-bottom: 24px;
+        color: $color;
     }
 
     &__opis {
@@ -274,6 +287,8 @@ html{
         line-height: 32px;
         letter-spacing: 0px;
         margin-bottom: 36px;
+        width: 457px;
+        color: $color;
     }
 
     &__btn:hover {
@@ -344,11 +359,12 @@ button:hover {
     }
 
     .mini-game {
-
+        padding-bottom: 49px;
 
         &__zag {
             font-size: 40px;
             padding-top: 49px;
+            margin-bottom: 48px;
         }
 
         &__item {
@@ -371,10 +387,26 @@ button:hover {
 
         &__name {
             font-size: 32px;
+            margin-bottom: 16px;
+            width: 200px;
         }
 
         &__opis {
             font-size: 16px;
+            margin-bottom: 32px;
+            line-height: 24px;
+            width: 275px;
+        }
+
+        &__btn {
+            width: 285px;
+            font-size: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+
         }
 
 
@@ -404,6 +436,7 @@ button:hover {
             font-size: 16px;
             text-align: center;
             position: relative;
+            line-height: 100%;
         }
 
         &__bold {
@@ -411,15 +444,22 @@ button:hover {
         }
 
         &__main {
-            padding-top: 147px;
+            padding-top: 118px;
             align-items: center;
             position: relative;
         }
 
         &__but {
-            padding: 16px 80px;
             font-size: 16px;
             position: relative;
+            width: 285px;
+        }
+
+        &__footer{
+            background-color: #BDED35;
+            width: 100%;
+            height: 52px;
+            margin-top: 158px;
         }
 
 
@@ -437,14 +477,14 @@ button:hover {
             right: -15px;
         }
 
-        &__but::after{
+        &__but::after {
             position: absolute;
             content: url(./img/Star\ 3.svg);
             top: -420px;
             left: 10px;
         }
 
-        &__text::before{
+        &__text::before {
             content: url(./img/Star\ 2.svg);
             top: -265px;
             left: 10px;
@@ -460,10 +500,11 @@ button:hover {
         position: absolute;
     }
 
-    
+
 
     .footer {
         font-size: 16px;
+        height: 100px;
     }
 
     .element::after {
