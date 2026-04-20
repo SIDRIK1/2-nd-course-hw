@@ -13,13 +13,16 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  border: none;
+}
+
 .header {
   background-image: url(./img/kryt.png);
-  height: 100vh;
-  max-width: 100vw;
+  height: 800px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-color: #202027;
 }
 .header__main {
   padding-top: 196px;
@@ -30,7 +33,7 @@ html {
 .header__but {
   width: 247px;
   padding: 16px 28px;
-  background-color: black;
+  background-color: #202027;
   color: white;
   border-radius: 60px;
   font-weight: 600;
@@ -44,6 +47,7 @@ html {
   font-size: 64px;
   line-height: 100%;
   letter-spacing: 0px;
+  color: #202027;
 }
 .header__text {
   font-weight: 400;
@@ -51,19 +55,55 @@ html {
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
+  max-width: 720px;
+  color: #202027;
 }
 .header__bold {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
+  color: #202027;
 }
 .header__but:hover {
   background-color: white;
   color: black;
   transition: all 1.5s;
 }
+.header__footer {
+  padding-top: 243px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  width: 1440px;
+  position: relative;
+  left: -1690px;
+  display: flex;
+  gap: 51px;
+}
+.header__wrapper-content {
+  display: flex;
+  gap: 51px;
+  white-space: nowrap;
+  color: #202027;
+  animation: smoothBackForth 20s ease-in-out infinite alternate;
+}
+.header__star-img {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+}
 
+@keyframes smoothBackForth {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1615px);
+  }
+}
 .about {
   background-color: #202027;
   padding-bottom: 96px;
@@ -104,6 +144,7 @@ html {
   border-radius: 53px;
   display: inline-block;
   margin-bottom: 16px;
+  color: #202027;
 }
 .about__game-name {
   font-weight: 700;
@@ -124,6 +165,7 @@ html {
   align-items: start;
   gap: 32px;
   position: relative;
+  justify-items: center;
 }
 .about__text-box {
   padding-left: 32px;
@@ -208,7 +250,7 @@ html {
 .mini-game__btn {
   width: 247px;
   padding: 16px 28px;
-  background-color: black;
+  background-color: #202027;
   color: white;
   border-radius: 60px;
   font-weight: 600;
@@ -224,6 +266,7 @@ html {
   line-height: 100%;
   letter-spacing: 0px;
   margin-bottom: 24px;
+  color: #202027;
 }
 .mini-game__opis {
   font-weight: 400;
@@ -231,6 +274,8 @@ html {
   line-height: 32px;
   letter-spacing: 0px;
   margin-bottom: 36px;
+  width: 457px;
+  color: #202027;
 }
 .mini-game__btn:hover {
   background-color: white;
@@ -293,12 +338,15 @@ button:hover {
   .mini-game__text-box {
     padding-bottom: 32px;
     padding-left: 32px;
+    width: 400px;
   }
   .mini-game__name {
-    font-size: 30px;
+    font-size: 24px;
   }
   .mini-game__opis {
-    font-size: 24px;
+    font-size: 16px;
+    width: 275px;
+    line-height: 24px;
   }
   .mini-game__img {
     width: 400px;
@@ -328,6 +376,9 @@ button:hover {
     padding-bottom: 16px;
     font-size: 24px;
   }
+  .header__footer {
+    padding-top: 310px;
+  }
   .footer {
     font-size: 24px;
   }
@@ -351,6 +402,12 @@ button:hover {
     content: none;
     display: none;
   }
+  .about__game-name {
+    font-size: 22px;
+  }
+  .about__text-box {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 800px) {
   .center {
@@ -360,9 +417,13 @@ button:hover {
   .about {
     display: none;
   }
+  .mini-game {
+    padding-bottom: 49px;
+  }
   .mini-game__zag {
     font-size: 40px;
     padding-top: 49px;
+    margin-bottom: 48px;
   }
   .mini-game__item {
     flex-direction: column;
@@ -379,9 +440,23 @@ button:hover {
   }
   .mini-game__name {
     font-size: 32px;
+    margin-bottom: 16px;
+    width: 200px;
   }
   .mini-game__opis {
     font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 24px;
+    width: 275px;
+  }
+  .mini-game__btn {
+    width: 285px;
+    font-size: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .mini-game__wrapper::after {
     content: none;
@@ -404,19 +479,26 @@ button:hover {
     font-size: 16px;
     text-align: center;
     position: relative;
+    line-height: 100%;
   }
   .header__bold {
     font-size: 16px;
   }
   .header__main {
-    padding-top: 147px;
+    padding-top: 118px;
     align-items: center;
     position: relative;
   }
   .header__but {
-    padding: 16px 80px;
     font-size: 16px;
     position: relative;
+    width: 285px;
+  }
+  .header__footer {
+    background-color: #BDED35;
+    width: 100%;
+    height: 52px;
+    margin-top: 158px;
   }
   .header__main::before {
     content: url(./img/Star\ 5.svg);
@@ -442,14 +524,18 @@ button:hover {
     left: 10px;
     position: absolute;
   }
-  .header::after {
+  .header__footer {
+    display: none;
+  }
+  .header__main::after {
     content: url(./img/big_star.svg);
     top: 0;
-    right: 0;
+    right: -15px;
     position: absolute;
   }
   .footer {
     font-size: 16px;
+    height: 100px;
   }
   .element::after {
     content: none;
